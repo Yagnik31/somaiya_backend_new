@@ -30,7 +30,7 @@ const MainArea = () => {
 
   const handleOnClassDelete = (id) => {
     axios.delete(`https://somaiya-backend.onrender.com/classroom/${id}`).then((res) => {
-        alert('class delted successfully')
+        alert('class deleted successfully')
         window.location.reload();
     }).catch((err) => {
       console.log(err)
